@@ -1,7 +1,7 @@
 # Logos and stickers
 
 This repository contains the [logo](logo/README.md) for the
-**RforMassSpectrometry** organization, stickers and other layouts.
+**RforMassSpectrometry** organisation, stickers and other layouts.
 
 # License
 
