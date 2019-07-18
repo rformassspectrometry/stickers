@@ -4,7 +4,7 @@ This repository contains the [logo](logo/README.md) for the
 **RforMassSpectrometry** organisation, stickers and other layouts.
 
 - [**RforMassSpectrometry**](sticker/README.md) sticker.
-- [**MsCoreUtils**](MsCoreUtile.README.md) sticker.
+- [**MsCoreUtils**](MsCoreUtils/README.md) sticker.
 
 # License
 
