@@ -6,6 +6,7 @@ This repository contains the [logo](logo/README.md) for the
 - [**RforMassSpectrometry**](sticker/README.md) sticker.
 - [**MsCoreUtils**](MsCoreUtils/README.md) sticker.
 - [**Spectra**](Spectra/README.md) sticker.
+- [**Chromatograms**](Chromatograms/README.md) sticker.
 
 # License
 
