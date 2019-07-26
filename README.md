@@ -3,10 +3,16 @@
 This repository contains the [logo](logo/README.md) for the
 **RforMassSpectrometry** organisation, stickers and other layouts.
 
-- [**RforMassSpectrometry**](sticker/README.md) sticker.
+- [**RforMassSpectrometry**](sticker/README.md) sticker
 - [**MsCoreUtils**](MsCoreUtils/README.md) sticker.
 - [**Spectra**](Spectra/README.md) sticker.
 - [**Chromatograms**](Chromatograms/README.md) sticker.
+
+[<img src="./sticker/RforMassSpectrometry.png" height="100">](sticker/README.md)
+[<img src="./MsCoreUtils/MsCoreUtils.png" height="100">](MsCoreUtils/README.md)
+[<img src="./Spectra/Spectra.png" height="100">](Spectra/README.md)
+[<img src="./Chromatograms/Chromatograms.png" height="100">](Chromatograms/README.md)
+
 
 # License
 
