@@ -73,7 +73,7 @@ hex <- ggplot() +
                  fill = paste0(col_purple, 40)) +
     geom_hexagon(size = 1.2, fill = NA, color = col_grey) +
     geom_subview(subview = img, x = 1.02, y = 0.71,
-                 width = 1.0, height = 1.7) +
+                 width = .8) +
     geom_url("www.RforMassSpectrometry.org",
              size = 4.7,
              color = col_grey2) + 
