@@ -72,12 +72,12 @@ hex <- ggplot() +
                  aes(x = x, y = y),
                  fill = paste0(col_purple, 40)) +
     geom_hexagon(size = 1.2, fill = NA, color = col_grey) +
-    geom_subview(subview = img, x = 1.02, y = 0.71,
-                 width = .8) +
+    geom_subview(subview = img, x = 0.28, y = 0.9,
+                 width = 1.9) +
     geom_url("www.RforMassSpectrometry.org",
              size = 4.7,
              color = col_grey2) + 
-    geom_pkgname("Features", y = 1.45, size = 25,
+    geom_pkgname("Features", y = 1.46, size = 25,
                  color = col_grey2, family = "Aller") + 
     theme_sticker()
 save_sticker(filename = "Features.png", hex)
