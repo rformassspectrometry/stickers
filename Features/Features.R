@@ -77,7 +77,7 @@ hex <- ggplot() +
     geom_url("www.RforMassSpectrometry.org",
              size = 4.7,
              color = col_grey2) + 
-    geom_pkgname("Features", y = 1.46, size = 25,
+    geom_pkgname("Features", y = 1.46, size = 22,
                  color = col_grey2, family = "Aller") + 
     theme_sticker()
 save_sticker(filename = "Features.png", hex)
