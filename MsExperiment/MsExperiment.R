@@ -43,13 +43,10 @@ hex_segment2 <- function(x = 1, y = 1, radius = 1, from_radius = 0,
 img1 <- readPNG("images/conductor2.png")
 img1 <- rasterGrob(img1, width = 1.6, x = 0.5, y = 0.6,
                    interpolate = TRUE)
-img2 <- readPNG("images/ms.png")
+img2 <- readPNG("images/scales.png")
 img2 <- rasterGrob(img2, width = 1.6, x = 0.5, y = 0.6,
                    interpolate = TRUE)
 
-img3 <- readPNG("images/features.png")
-img3 <- rasterGrob(img3, width = 1.6, x = 0.5, y = 0.6,
-                 interpolate = TRUE)
 
 
 ## Manually define...
@@ -80,12 +77,10 @@ hex <- ggplot() +
                  aes(x = x, y = y),
                  fill = paste0(col_purple, 40)) +
     geom_hexagon(size = 1.2, fill = NA, color = col_grey) +
-    geom_subview(subview = img3, x = 1.42, y = .9,
-                 width = 0.5) +    
-    geom_subview(subview = img1, x = .45, y = 0.7,
+    geom_subview(subview = img1, x = 1, y = 0.5,
                  width = 0.5) +
-    geom_subview(subview = img2, x = 1, y = 0.8,
-                 width = 0.7) +
+    geom_subview(subview = img2, x = 1, y = 1,
+                 width = 1) +
     geom_url("www.RforMassSpectrometry.org",
              size = 4.7,
              color = col_grey2) + 
