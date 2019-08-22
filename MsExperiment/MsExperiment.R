@@ -40,52 +40,51 @@ hex_segment2 <- function(x = 1, y = 1, radius = 1, from_radius = 0,
                  fill = fill, color = color, size = size)
 }
 
-img1 <- readPNG("images/conductor2.png")
-img1 <- rasterGrob(img1, width = 1.6, x = 0.5, y = 0.6,
-                   interpolate = TRUE)
-img2 <- readPNG("images/scales.png")
-img2 <- rasterGrob(img2, width = 1.6, x = 0.5, y = 0.6,
+img1 <- readPNG("images/MsExperiment-drawing2.png")
+img1 <- rasterGrob(img1, width = 1.7, x = 0.5, y = 0.6,
                    interpolate = TRUE)
 
 
 
 ## Manually define...
-col_blue = "#246abe"
-col_grey = "#95959c"
-col_grey2 = "#838289" # The color after Gimp converting the color scheme
-col_purple = "#9200fc"
-col_orange = "#f4810b"
-col_yellow = "#fef14e"
+## col_blue = "#246abe"
+## col_grey = "#95959c"
+## col_purple = "#9200fc"
+## col_orange = "#f4810b"
+## col_yellow = "#fef14e"
+col_grey = "#83828a" # The color after Gimp converting the color scheme
+col_blue = "#aabfe1"
+col_purple = "#dfc2fe"
+col_orange = "#fcdac2"
+col_yellow = "#fffbcf"
 col_white = "#ffffff"
 
 ## colored beams.
 hex <- ggplot() +
     geom_hexagon(size = 1.2, fill = col_white, color = NA) +
-    hex_segment2(size = 0, fill = paste0(col_blue, 60),
+    hex_segment2(size = 0, fill = paste0(col_blue),
                  from_radius = 0, to_radius = 1,
                  from_angle = 150, to_angle = 210) +
     geom_polygon(data = data.frame(x = c(1, 1 + sqrt(3)/2, 1 + sqrt(3)/3),
                                    y = c(1, 1.5, 1.5 + 1/6)),
                  aes(x = x, y = y),
-                 fill = paste0(col_yellow, 40)) +
+                 fill = paste0(col_yellow)) +
     geom_polygon(data = data.frame(x = c(1, 1 + sqrt(3)/3, 1 + sqrt(3)/6),
                                    y = c(1, 1.5 + 1/6, 1.5 + 1/3)),
                  aes(x = x, y = y),
-                 fill = paste0(col_orange, 40)) +
+                 fill = paste0(col_orange)) +
     geom_polygon(data = data.frame(x = c(1, 1 + sqrt(3)/6, 1),
                                    y = c(1, 1.5 + 1/3, 2)),
                  aes(x = x, y = y),
-                 fill = paste0(col_purple, 40)) +
+                 fill = paste0(col_purple)) +
     geom_hexagon(size = 1.2, fill = NA, color = col_grey) +
-    geom_subview(subview = img1, x = 1, y = 0.5,
-                 width = 0.5) +
-    geom_subview(subview = img2, x = 1, y = 1,
+    geom_subview(subview = img1, x = 0.97, y = 0.82,
                  width = 1) +
     geom_url("www.RforMassSpectrometry.org",
              size = 4.7,
-             color = col_grey2) + 
+             color = col_grey) + 
     geom_pkgname("MsExperiment", y = 1.46, size = 16,
-                 color = col_grey2, family = "Aller") + 
+                 color = col_grey, family = "Aller") + 
     theme_sticker()
 save_sticker(filename = "MsExperiment.png", hex)
 
