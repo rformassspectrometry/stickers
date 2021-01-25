@@ -1,4 +1,4 @@
-# The `Features` sticker
+# The `QFeatures` sticker
 
 - Design: Laurent Gatto (@lgatto).
 - Contributions: Johannes Rainer (@jorainer), Sebastian Gibb (@sgibb).
@@ -6,5 +6,5 @@
   [CC-BY](https://creativecommons.org/licenses/by/2.0/). Feel free to
   share and adapt, but don't forget to credit the author.
 
-<img src="./Features.png" height="200">
+<img src="./QFeatures.png" height="200">
 
