@@ -8,6 +8,7 @@ This repository contains the [logo](logo/README.md) for the
 [<img src="./MetaboCoreUtils/MetaboCoreUtils.png" height="150">](MetaboCoreUtils/README.md)
 [<img src="./Spectra/Spectra.png" height="150">](Spectra/README.md)
 [<img src="./Chromatograms/Chromatograms.png" height="150">](Chromatograms/README.md)
+[<img src="./MsFeatures/MsFeatures.png" height="150">](MsFeatures/README.md)
 [<img src="./QFeatures/QFeatures.png" height="150">](QFeatures/README.md)
 [<img src="./MsExperiment/MsExperiment.png" height="150">](MsExperiment/README.md)
 
