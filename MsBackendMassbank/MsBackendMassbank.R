@@ -41,8 +41,8 @@ hex_segment2 <- function(x = 1, y = 1, radius = 1, from_radius = 0,
 }
 
 
-img <- readPNG("drawings/MassBank-hero.png")
-img <- rasterGrob(img, width = 1.8, x = 0.5, y = 0.5,
+img <- readPNG("drawings/MassBank-hero-bw.png")
+img <- rasterGrob(img, width = 1.6, x = 0.5, y = 0.5,
                        interpolate = TRUE)
 
 ## Manually define...
@@ -81,6 +81,25 @@ hex <- ggplot() +
     ##              from_radius = 0, to_radius = 1,
     ##              from_angle = 90, to_angle = 150) +
 
+    hex_segment2(size = 0, fill = paste0(col_yellow, 10),
+                 from_radius = 0, to_radius = 0.9,
+                 from_angle = 330, to_angle = 30) +
+    hex_segment2(size = 0, fill = paste0(col_orange, 10),
+                 from_radius = 0, to_radius = 0.9,
+                 from_angle = 30, to_angle = 90) +
+    hex_segment2(size = 0, fill = paste0(col_purple, 10),
+                 from_radius = 0, to_radius = 0.9,
+                 from_angle = 90, to_angle = 150) +
+    hex_segment2(size = 0, fill = paste0(col_blue, 15),
+                 from_radius = 0, to_radius = 0.9,
+                 from_angle = 150, to_angle = 210) +
+    hex_segment2(size = 0, fill = paste0(col_grey, 10),
+                 from_radius = 0, to_radius = 0.9,
+                 from_angle = 210, to_angle = 270) +
+    hex_segment2(size = 0, fill = paste0(col_grey, 10),
+                 from_radius = 0, to_radius = 0.9,
+                 from_angle = 270, to_angle = 330) +
+    ## border
     hex_segment2(size = 0, fill = paste0(col_yellow, 70),
                  from_radius = 0.9, to_radius = 1,
                  from_angle = 330, to_angle = 30) +
@@ -100,12 +119,12 @@ hex <- ggplot() +
                  from_radius = 0.9, to_radius = 1,
                  from_angle = 270, to_angle = 330) +
     
-    geom_subview(subview = img, x = 1.0, y = 0.75,
+    geom_subview(subview = img, x = 1.03, y = 0.75,
                  width = 1, height = 1) +
     ## font size for linux: 6.5, macOS
     geom_url("www.bioconductor.org", x = 1.06, y = 0.09,
              color = col_bg, size = 2, family = font_text) + 
-    geom_url("MsBackendMassbank", x = 0.225, y = 1.32, family = font_text,
+    geom_url("MsBackendMassbank", x = 0.225, y = 1.3, family = font_text,
              color = col_text, size = 4, angle = 0) + 
     theme_sticker()
 save_sticker(filename = "MsBackendMassbank.png", hex)
