@@ -9,7 +9,7 @@ This repository contains the [logo](logo/README.md) for the
 [<img src="./Spectra/Spectra.png" height="150">](Spectra/README.md)
 [<img src="./Chromatograms/Chromatograms.png" height="150">](Chromatograms/README.md)
 [<img src="./MsBackendMassbank/MsBackendMassbank.png" height="150">](MsBackendMassbank/README.md)
-[<img src="./MsBackendMassbank/MsBackendMgf.png" height="150">](MsBackendMgf/README.md)
+[<img src="./MsBackendMgf/MsBackendMgf.png" height="150">](MsBackendMgf/README.md)
 [<img src="./MsFeatures/MsFeatures.png" height="150">](MsFeatures/README.md)
 [<img src="./QFeatures/QFeatures.png" height="150">](QFeatures/README.md)
 [<img src="./MsExperiment/MsExperiment.png" height="150">](MsExperiment/README.md)
