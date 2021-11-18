@@ -76,9 +76,37 @@ hex <- ggplot() +
                  width = 1) +
     geom_url("www.RforMassSpectrometry.org",
              size = 4.7,
-             color = col_grey2) + 
+             color = col_grey2) +
     geom_pkgname("QFeatures", y = 1.46, size = 22,
-                 color = col_grey2, family = "Aller") + 
+                 color = col_grey2, family = "Aller") +
     theme_sticker()
 save_sticker(filename = "QFeatures.png", hex)
 
+## Bioconductor version with larger font and Bioconductor URL
+hex2 <- ggplot() +
+    geom_hexagon(size = 1.2, fill = col_white, color = NA) +
+    hex_segment2(size = 0, fill = paste0(col_blue, 60),
+         from_radius = 0, to_radius = 1,
+         from_angle = 150, to_angle = 210) +
+    geom_polygon(data = data.frame(x = c(1, 1 + sqrt(3)/2, 1 + sqrt(3)/3),
+                   y = c(1, 1.5, 1.5 + 1/6)),
+         aes(x = x, y = y),
+         fill = paste0(col_yellow, 40)) +
+    geom_polygon(data = data.frame(x = c(1, 1 + sqrt(3)/3, 1 + sqrt(3)/6),
+                   y = c(1, 1.5 + 1/6, 1.5 + 1/3)),
+         aes(x = x, y = y),
+         fill = paste0(col_orange, 40)) +
+    geom_polygon(data = data.frame(x = c(1, 1 + sqrt(3)/6, 1),
+                   y = c(1, 1.5 + 1/3, 2)),
+         aes(x = x, y = y),
+         fill = paste0(col_purple, 40)) +
+    geom_hexagon(size = 1.2, fill = NA, color = col_grey) +
+    geom_subview(subview = img, x = 1, y = 0.88,
+         width = 1) +
+    geom_url("www.bioconductor.org",
+         size = 5.5,
+         color = col_grey2) +
+    geom_pkgname("QFeatures", y = 1.46, size = 24,
+         color = col_grey2, family = "Aller") +
+    theme_sticker()
+save_sticker(filename = "QFeatures2.png", hex2)
