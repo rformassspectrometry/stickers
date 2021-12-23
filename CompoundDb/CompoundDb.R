@@ -125,7 +125,7 @@ hex <- ggplot() +
                  from_radius = 0.9, to_radius = 1,
                  from_angle = 270, to_angle = 330) +
     
-    geom_subview(subview = img, x = 1.0, y = 0.99,
+    geom_subview(subview = img, x = 1.0, y = 0.98,
                  width = 1.05, height = 1.0) +
     ## font size for linux: 6.5, macOS
     geom_url("www.bioconductor.org", x = 1.06, y = 0.09,
