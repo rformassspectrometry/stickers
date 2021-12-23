@@ -5,6 +5,7 @@ This repository contains the [logo](logo/README.md) for the
 
 [<img src="./sticker/RforMassSpectrometry.png" height="150">](sticker/README.md)
 [<img src="./MsCoreUtils/MsCoreUtils.png" height="150">](MsCoreUtils/README.md)
+[<img src="./MetaboAnnotation/MetaboAnnotation.png" height="150">](MetaboAnnotation/README.md)
 [<img src="./MetaboCoreUtils/MetaboCoreUtils.png" height="150">](MetaboCoreUtils/README.md)
 [<img src="./Spectra/Spectra.png" height="150">](Spectra/README.md)
 [<img src="./Chromatograms/Chromatograms.png" height="150">](Chromatograms/README.md)
@@ -13,6 +14,7 @@ This repository contains the [logo](logo/README.md) for the
 [<img src="./MsFeatures/MsFeatures.png" height="150">](MsFeatures/README.md)
 [<img src="./QFeatures/QFeatures.png" height="150">](QFeatures/README.md)
 [<img src="./MsExperiment/MsExperiment.png" height="150">](MsExperiment/README.md)
+[<img src="./CompoundDb/CompoundDb.png" height="150">](CompoundDb/README.md)
 
 
 # License
