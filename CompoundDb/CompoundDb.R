@@ -115,13 +115,13 @@ hex <- ggplot() +
     hex_segment2(size = 0, fill = paste0(col_red_2, "ff"),
                  from_radius = 0.9, to_radius = 1,
                  from_angle = 90, to_angle = 150) +
-    hex_segment2(size = 0, fill = paste0(col_red_2, "ff"),
+    hex_segment2(size = 0, fill = paste0(col_red, "ff"),
                  from_radius = 0.9, to_radius = 1,
                  from_angle = 150, to_angle = 210) +
     hex_segment2(size = 0, fill = paste0(col_red, "ff"),
                  from_radius = 0.9, to_radius = 1,
                  from_angle = 210, to_angle = 270) +
-    hex_segment2(size = 0, fill = paste0(col_red, "ee"),
+    hex_segment2(size = 0, fill = paste0(col_red, "ff"),
                  from_radius = 0.9, to_radius = 1,
                  from_angle = 270, to_angle = 330) +
     
