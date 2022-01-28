@@ -124,7 +124,7 @@ hex <- ggplot() +
     ## font size for linux: 6.5, macOS
     geom_url("www.bioconductor.org", x = 1.06, y = 0.09,
              color = col_bg, size = 2, family = font_text) + 
-    geom_url("MsBackendMgf", x = 0.225, y = 1.27, family = font_text,
+    geom_url("MsBackendMsp", x = 0.225, y = 1.27, family = font_text,
              color = col_text, size = 5.5, angle = 0) + 
     geom_url("MSP", x = 0.73, y = 0.73, family = "Aller_BdIt",
              color = "#000000", size = 6.3, angle = 0) + 
