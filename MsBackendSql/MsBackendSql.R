@@ -36,96 +36,90 @@ hex_segment2 <- function(x = 1, y = 1, radius = 1, from_radius = 0,
                                    to_radius * sin(to_angle),
                                    from_radius * sin(to_angle))
                          )
-    geom_polygon(aes_(x = ~x, y = ~y), data = coords,
+    geom_polygon(aes(x = coords$x, y = coords$y), data = coords,
                  fill = fill, color = color, size = size)
 }
 
 
-img <- readPNG("drawings/MassBank-hero-bw.png")
+img <- readPNG("drawings/MsBackendSql-hero-bw.png")
 img <- rasterGrob(img, width = 1.6, x = 0.5, y = 0.5,
                        interpolate = TRUE)
 
 ## Manually define...
-col_blue = "#246abe"
-col_grey = "#95959c"
-col_grey = "#838289" # The color after Gimp converting the color scheme
-col_purple = "#9200fc"
-col_orange = "#f4810b"
-col_yellow = "#fef14e"
-col_white = "#ffffff"
+col_red = "#cf4b28"
+col_orange = "#e29d3c"
+col_yellow = "#fce2a6"
+
+## Old colors
+## col_blue = "#246abe"
+## col_grey = "#95959c"
+## col_grey = "#838289" # The color after Gimp converting the color scheme
+## col_purple = "#9200fc"
+## col_orange = "#f4810b"
+## col_yellow = "#fef14e"
+## col_white = "#ffffff"
 
 ## Define the colors for the parts
-col_bg <- col_white               # the background
-col_upper_half <- col_purple              # upper right.
-col_upper_border <- col_orange      # upper half border.
-col_lower_border <- col_yellow            # lower half border.
-col_text_border <- col_grey        # color for text in border
-col_text <- col_grey
-font_text <- "Aller_Rg"
+## col_bg <- col_white               # the background
+## col_upper_half <- col_purple              # upper right.
+## col_upper_border <- col_orange      # upper half border.
+## col_lower_border <- col_yellow            # lower half border.
+## col_text_border <- col_grey        # color for text in border
+## col_text <- col_grey
+## font_text <- "Aller_Rg"
 
 ## To use this font, copy the ttf to the font directory of the
 ## hexSticker package
-font_text <- "Aller_Lt"
-font_text <- "Aller_Rg"
+## font_text <- "Aller_Lt"
+## font_text <- "Aller_Rg"
 ## font_text <- "SpaceMono-Regular"
 
 hex <- ggplot() +
     geom_hexagon(size = 1.2, fill = col_bg, color = NA) +
-    ## hex_segment2(size = 0, fill = col_upper_half,
-    ##              from_radius = 0, to_radius = 1,
-    ##              from_angle = 330, to_angle = 30) +
-    ## hex_segment2(size = 0, fill = col_upper_half,
-    ##              from_radius = 0, to_radius = 1,
-    ##              from_angle = 30, to_angle = 90) +
-    ## hex_segment2(size = 0, fill = col_upper_half,
-    ##              from_radius = 0, to_radius = 1,
-    ##              from_angle = 90, to_angle = 150) +
 
-    hex_segment2(size = 0, fill = paste0(col_yellow, 10),
+    hex_segment2(size = 0, fill = paste0(col_orange, 10), # right
                  from_radius = 0, to_radius = 0.9,
                  from_angle = 330, to_angle = 30) +
-    hex_segment2(size = 0, fill = paste0(col_orange, 10),
+    hex_segment2(size = 0, fill = paste0(col_red, 10), # top right
                  from_radius = 0, to_radius = 0.9,
                  from_angle = 30, to_angle = 90) +
-    hex_segment2(size = 0, fill = paste0(col_purple, 10),
+    hex_segment2(size = 0, fill = paste0(col_red, 10), # top left
                  from_radius = 0, to_radius = 0.9,
                  from_angle = 90, to_angle = 150) +
-    hex_segment2(size = 0, fill = paste0(col_blue, 15),
+    hex_segment2(size = 0, fill = paste0(col_orange, 10), # left
                  from_radius = 0, to_radius = 0.9,
                  from_angle = 150, to_angle = 210) +
-    hex_segment2(size = 0, fill = paste0(col_grey, 10),
+    hex_segment2(size = 0, fill = paste0(col_yellow, 10), # bottom
                  from_radius = 0, to_radius = 0.9,
                  from_angle = 210, to_angle = 270) +
-    hex_segment2(size = 0, fill = paste0(col_grey, 10),
+    hex_segment2(size = 0, fill = paste0(col_yellow, 10), # bottom
                  from_radius = 0, to_radius = 0.9,
                  from_angle = 270, to_angle = 330) +
     ## border
-    hex_segment2(size = 0, fill = paste0(col_yellow, 70),
+    hex_segment2(size = 0, fill = paste0(col_orange, 80),
                  from_radius = 0.9, to_radius = 1,
                  from_angle = 330, to_angle = 30) +
-    hex_segment2(size = 0, fill = paste0(col_orange, 70),
+    hex_segment2(size = 0, fill = paste0(col_red, 80),
                  from_radius = 0.9, to_radius = 1,
                  from_angle = 30, to_angle = 90) +
-    hex_segment2(size = 0, fill = paste0(col_purple, 60),
+    hex_segment2(size = 0, fill = paste0(col_red, 80),
                  from_radius = 0.9, to_radius = 1,
                  from_angle = 90, to_angle = 150) +
-    hex_segment2(size = 0, fill = paste0(col_blue, 70),
+    hex_segment2(size = 0, fill = paste0(col_orange, 80),
                  from_radius = 0.9, to_radius = 1,
                  from_angle = 150, to_angle = 210) +
-    hex_segment2(size = 0, fill = col_grey,
+    hex_segment2(size = 0, fill = col_yellow,
                  from_radius = 0.9, to_radius = 1,
                  from_angle = 210, to_angle = 270) +
-    hex_segment2(size = 0, fill = col_grey,
+    hex_segment2(size = 0, fill = col_yellow,
                  from_radius = 0.9, to_radius = 1,
                  from_angle = 270, to_angle = 330) +
     
-    geom_subview(subview = img, x = 1.03, y = 0.75,
-                 width = 1, height = 1) +
+    geom_subview(subview = img, x = 1.0, y = 0.95,
+                 width = 0.95, height = 0.95) +
     ## font size for linux: 6.5, macOS
-    geom_url("www.bioconductor.org", x = 1.06, y = 0.09,
-             color = col_bg, size = 2, family = font_text) + 
-    geom_url("MsBackendMassbank", x = 0.225, y = 1.3, family = font_text,
-             color = col_text, size = 4, angle = 0) + 
+    geom_url("www.bioconductor.org", x = 0.98, y = 0.17,
+             color = col_red, size = 6.5, family = font_text) + 
     theme_sticker()
-save_sticker(filename = "MsBackendMassbank.png", hex)
+save_sticker(filename = "MsBackendSql.png", hex)
 
