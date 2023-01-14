@@ -22,7 +22,7 @@ This repository contains the [logo](logo/README.md) for the
 # Diversity-affirming versions
 
 [<img src="./sticker/RforMassSpec-rainbow3.png" height="150">](sticker/README.md)
-[<img src="./sticker/Spectra-rainbow.png" height="150">](Spectra/README.md)
+[<img src="./Spectra/Spectra-rainbow.png" height="150">](Spectra/README.md)
 
 
 # License
