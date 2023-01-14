@@ -7,4 +7,5 @@
   share and adapt, but don't forget to credit the author.
 
 <img src="./Spectra.png" height="200">
+<img src="./Spectra-rainbow.png" height="200">
 

@@ -36,7 +36,7 @@ hex_segment2 <- function(x = 1, y = 1, radius = 1, from_radius = 0,
                                    to_radius * sin(to_angle),
                                    from_radius * sin(to_angle))
                          )
-    geom_polygon(aes_(x = ~x, y = ~y), data = coords,
+    geom_polygon(aes(x = coords$x, y = coords$y), data = coords,
                  fill = fill, color = color, size = size)
 }
 
@@ -72,11 +72,150 @@ hex <- ggplot() +
                  aes(x = x, y = y),
                  fill = paste0(col_purple, 40)) +
     geom_hexagon(size = 1.2, fill = NA, color = col_grey) +
-    geom_subview(subview = img, x = 1.02, y = 0.5,
-                 width = 1.0, height = 1.7) +
-    geom_url("www.RforMassSpectrometry.org", color = col_grey) + 
-    geom_pkgname("Spectra", y = 1.375, size = 7.5,
+    geom_subview(subview = img, x = 1.01, y = 0.51,
+                 width = 1.1, height = 1.7) +
+    geom_url("www.bioconductor.org", x = 1.05, y = 0.12,
+             color = col_text, size = 6) + 
+    geom_pkgname("Spectra", y = 1.3, size = 33,
                  color = col_grey, family = "Aller") + 
     theme_sticker()
-save_sticker(filename = "Spectra.png", hex)
+save_sticker(filename = "Spectra.png", hex, dpi = 300)
 
+## Rainbow sticker
+
+## Rainbow color
+red <- "#ff0000"
+orange <- "#ffa52c"
+yellow <- "#ead018"
+green <- "#007e15"
+blue <- "#0505f9"
+purple <- "#86007d"
+
+col_text = "#2e3131"
+
+hex <- ggplot() +
+    geom_hexagon(size = 1.2, fill = "#ffffff", color = NA) +
+    ## Top right; first area then border.
+    hex_segment2(size = 0, fill = paste0(red, 80),
+                 from_radius = 0, to_radius = 0.17,
+                 from_angle = 30, to_angle = 90) +
+    hex_segment2(size = 0, fill = paste0(orange, 80),
+                 from_radius = 0.17, to_radius = 0.33,
+                 from_angle = 30, to_angle = 90) +
+    hex_segment2(size = 0, fill = paste0(yellow, 80),
+                 from_radius = 0.33, to_radius = 0.5,
+                 from_angle = 30, to_angle = 90) +
+    hex_segment2(size = 0, fill = paste0(green, 80),
+                 from_radius = 0.5, to_radius = 0.66,
+                 from_angle = 30, to_angle = 90) +
+    hex_segment2(size = 0, fill = paste0(blue, 80),
+                 from_radius = 0.66, to_radius = 0.83,
+                 from_angle = 30, to_angle = 90) +
+    hex_segment2(size = 0, fill = paste0(purple, 80),
+                 from_radius = 0.83, to_radius = 1,
+                 from_angle = 30, to_angle = 90) +
+    ## Right
+    hex_segment2(size = 0, fill = paste0(red, 40),
+                 from_radius = 0, to_radius = 0.17,
+                 from_angle = 330, to_angle = 30) +
+    hex_segment2(size = 0, fill = paste0(orange, 40),
+                 from_radius = 0.17, to_radius = 0.33,
+                 from_angle = 330, to_angle = 30) +
+    hex_segment2(size = 0, fill = paste0(yellow, 40),
+                 from_radius = 0.33, to_radius = 0.5,
+                 from_angle = 330, to_angle = 30) +
+    hex_segment2(size = 0, fill = paste0(green, 40),
+                 from_radius = 0.5, to_radius = 0.66,
+                 from_angle = 330, to_angle = 30) +
+    hex_segment2(size = 0, fill = paste0(blue, 40),
+                 from_radius = 0.66, to_radius = 0.83,
+                 from_angle = 330, to_angle = 30) +
+    hex_segment2(size = 0, fill = paste0(purple, 40),
+                 from_radius = 0.83, to_radius = 1,
+                 from_angle = 330, to_angle = 30) +
+    ## Bottom right 270 330
+    hex_segment2(size = 0, fill = paste0(red, 40),
+                 from_radius = 0, to_radius = 0.17,
+                 from_angle = 270, to_angle = 330) +
+    hex_segment2(size = 0, fill = paste0(orange, 40),
+                 from_radius = 0.17, to_radius = 0.33,
+                 from_angle = 270, to_angle = 330) +
+    hex_segment2(size = 0, fill = paste0(yellow, 40),
+                 from_radius = 0.33, to_radius = 0.5,
+                 from_angle = 270, to_angle = 330) +
+    hex_segment2(size = 0, fill = paste0(green, 40),
+                 from_radius = 0.5, to_radius = 0.66,
+                 from_angle = 270, to_angle = 330) +
+    hex_segment2(size = 0, fill = paste0(blue, 40),
+                 from_radius = 0.66, to_radius = 0.83,
+                 from_angle = 270, to_angle = 330) +
+    hex_segment2(size = 0, fill = paste0(purple, 40),
+                 from_radius = 0.83, to_radius = 1,
+                 from_angle = 270, to_angle = 330) +
+    ## Bottom left 210 270
+    hex_segment2(size = 0, fill = paste0(red, 40),
+                 from_radius = 0, to_radius = 0.17,
+                 from_angle = 210, to_angle = 270) +
+    hex_segment2(size = 0, fill = paste0(orange, 40),
+                 from_radius = 0.17, to_radius = 0.33,
+                 from_angle = 210, to_angle = 270) +
+    hex_segment2(size = 0, fill = paste0(yellow, 40),
+                 from_radius = 0.33, to_radius = 0.5,
+                 from_angle = 210, to_angle = 270) +
+    hex_segment2(size = 0, fill = paste0(green, 40),
+                 from_radius = 0.5, to_radius = 0.66,
+                 from_angle = 210, to_angle = 270) +
+    hex_segment2(size = 0, fill = paste0(blue, 40),
+                 from_radius = 0.66, to_radius = 0.83,
+                 from_angle = 210, to_angle = 270) +
+    hex_segment2(size = 0, fill = paste0(purple, 40),
+                 from_radius = 0.83, to_radius = 1,
+                 from_angle = 210, to_angle = 270) +
+    ## Left 150 210
+    hex_segment2(size = 0, fill = paste0(red, 40),
+                 from_radius = 0, to_radius = 0.17,
+                 from_angle = 150, to_angle = 210) +
+    hex_segment2(size = 0, fill = paste0(orange, 40),
+                 from_radius = 0.17, to_radius = 0.33,
+                 from_angle = 150, to_angle = 210) +
+    hex_segment2(size = 0, fill = paste0(yellow, 40),
+                 from_radius = 0.33, to_radius = 0.5,
+                 from_angle = 150, to_angle = 210) +
+    hex_segment2(size = 0, fill = paste0(green, 40),
+                 from_radius = 0.5, to_radius = 0.66,
+                 from_angle = 150, to_angle = 210) +
+    hex_segment2(size = 0, fill = paste0(blue, 40),
+                 from_radius = 0.66, to_radius = 0.83,
+                 from_angle = 150, to_angle = 210) +
+    hex_segment2(size = 0, fill = paste0(purple, 40),
+                 from_radius = 0.83, to_radius = 1,
+                 from_angle = 150, to_angle = 210) +
+    ## Top left 90 150
+    hex_segment2(size = 0, fill = paste0(red, 40),
+                 from_radius = 0, to_radius = 0.17,
+                 from_angle = 90, to_angle = 150) +
+    hex_segment2(size = 0, fill = paste0(orange, 40),
+                 from_radius = 0.17, to_radius = 0.33,
+                 from_angle = 90, to_angle = 150) +
+    hex_segment2(size = 0, fill = paste0(yellow, 40),
+                 from_radius = 0.33, to_radius = 0.5,
+                 from_angle = 90, to_angle = 150) +
+    hex_segment2(size = 0, fill = paste0(green, 40),
+                 from_radius = 0.5, to_radius = 0.66,
+                 from_angle = 90, to_angle = 150) +
+    hex_segment2(size = 0, fill = paste0(blue, 40),
+                 from_radius = 0.66, to_radius = 0.83,
+                 from_angle = 90, to_angle = 150) +
+    hex_segment2(size = 0, fill = paste0(purple, 40),
+                 from_radius = 0.83, to_radius = 1,
+                 from_angle = 90, to_angle = 150) +
+    ## Image
+    geom_subview(subview = img, x = 1.02, y = 0.59,
+                 width = 1.1, height = 1.2) +
+    ## font size for linux: 6.5, macOS
+    geom_url("www.bioconductor.org", x = 1.02, y = 0.15,
+             color = col_text, size = 6) + 
+    geom_pkgname("Spectra", y = 1.31, size = 33,
+                 color = col_text, family = "Aller") + 
+    theme_sticker()
+save_sticker(filename = "Spectra-rainbow.png", hex, dpi = 300)

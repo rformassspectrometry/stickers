@@ -19,6 +19,12 @@ This repository contains the [logo](logo/README.md) for the
 [<img src="./CompoundDb/CompoundDb.png" height="150">](CompoundDb/README.md)
 
 
+# Diversity-affirming versions
+
+[<img src="./sticker/RforMassSpec-rainbow3.png" height="150">](sticker/README.md)
+[<img src="./sticker/Spectra-rainbow.png" height="150">](Spectra/README.md)
+
+
 # License
 
 You can distribute the logo under the terms of the Creative Commons
