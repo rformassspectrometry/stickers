@@ -7,4 +7,7 @@
   share and adapt, but don't forget to credit the author.
 
 <img src="./RforMassSpectrometry.png" height="200">
+<img src="./RforMassSpec-rainbow.png" height="200">
+<img src="./RforMassSpec-rainbow2.png" height="200">
+<img src="./RforMassSpec-rainbow3.png" height="200">
 
