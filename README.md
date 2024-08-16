@@ -17,6 +17,7 @@ This repository contains the [logo](logo/README.md) for the
 [<img src="./MsFeatures/MsFeatures.png" height="150">](MsFeatures/README.md)
 [<img src="./QFeatures/QFeatures.png" height="150">](QFeatures/README.md)
 [<img src="./Spectra/Spectra.png" height="150">](Spectra/README.md)
+[<img src="./SpectraQL/SpectraQL.png" height="150">](SpectraQL/README.md)
 [<img src="./SpectriPy/SpectriPy.png" height="150">](SpectriPy/README.md)
 
 
