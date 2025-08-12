@@ -40,9 +40,16 @@ hex_segment2 <- function(x = 1, y = 1, radius = 1, from_radius = 0,
                  fill = fill, color = color, size = size)
 }
 
-img <- readPNG("images/PSMatch-logo.png")
+## Original logo had thinner lines
+# img <- readPNG("images/PSMatch-thin.png")
+# img <- rasterGrob(img, width = 1.6, x = 0.5, y = 0.6,
+#                   interpolate = TRUE)
+
+## Logo with thicker lines
+img <- readPNG("images/PSMatch-thick.png")
 img <- rasterGrob(img, width = 1.6, x = 0.5, y = 0.6,
                   interpolate = TRUE)
+
 
 ## Manually define...
 col_blue = "#246abe"
@@ -74,11 +81,11 @@ hex <- ggplot() +
                  aes(x = x, y = y),
                  fill = paste0(col_purple, 40)) +
     geom_hexagon(size = 1.2, fill = NA, color = col_grey) +
-    geom_subview(subview = img, x = 1, y = 0.750,
-                 width = 1.32, height = 2.04) +
+    geom_subview(subview = img, x = 1, y = 0.68,
+                 width = 1.045, height = 1.615) +
     geom_url("www.bioconductor.org", x = 1.05, y = 0.12,
              color = col_text, size = 6) + 
-    geom_pkgname("PSMatch", y = 1.5, size = 26,
+    geom_pkgname("PSMatch", y = 1.58, size = 20,
                  color = col_grey, family = "Aller") + 
     theme_sticker()
 save_sticker(filename = "PSMatch.png", hex, dpi = 300)
@@ -211,11 +218,11 @@ hex <- ggplot() +
     hex_segment2(size = 0, fill = paste0(purple, 40),
                  from_radius = 0.83, to_radius = 1,
                  from_angle = 90, to_angle = 150) +
-    geom_subview(subview = img, x = 1, y = 0.750,
-                 width = 1.32, height = 2.04) +
+    geom_subview(subview = img, x = 1, y = 0.68,
+                 width = 1.045, height = 1.615) +
     geom_url("www.bioconductor.org", x = 1.05, y = 0.12,
              color = col_text, size = 6) + 
-    geom_pkgname("PSMatch", y = 1.5, size = 26,
+    geom_pkgname("PSMatch", y = 1.58, size = 20,
                  color = col_grey, family = "Aller") + 
     theme_sticker()
   
