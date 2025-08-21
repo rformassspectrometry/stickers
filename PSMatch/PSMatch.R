@@ -100,8 +100,6 @@ green <- "#007e15"
 blue <- "#0505f9"
 purple <- "#86007d"
 
-col_text = "#2e3131"
-
 hex <- ggplot() +
     geom_hexagon(size = 1.2, fill = "#ffffff", color = NA) +
     ## Top right; first area then border.
@@ -223,7 +221,7 @@ hex <- ggplot() +
     geom_url("www.bioconductor.org", x = 1.05, y = 0.12,
              color = col_text, size = 6) + 
     geom_pkgname("PSMatch", y = 1.58, size = 20,
-                 color = col_grey, family = "Aller") + 
+                 color = "black", family = "Aller") + 
     theme_sticker()
   
 save_sticker(filename = "PSMatch-rainbow.png", hex, dpi = 300)
