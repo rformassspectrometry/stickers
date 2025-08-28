@@ -8,6 +8,7 @@ This repository contains the [logo](logo/README.md) for the
 [<img src="./CompoundDb/CompoundDb.png" height="150">](CompoundDb/README.md)
 [<img src="./MetaboAnnotation/MetaboAnnotation.png" height="150">](MetaboAnnotation/README.md)
 [<img src="./MetaboCoreUtils/MetaboCoreUtils.png" height="150">](MetaboCoreUtils/README.md)
+[<img src="./Metabonaut/Metabonaut.png" height="150">](Metabonaut/README.md)
 [<img src="./MsBackendMassbank/MsBackendMassbank.png" height="150">](MsBackendMassbank/README.md)
 [<img src="./MsBackendMetaboLights/MsBackendMetaboLights.png" height="150">](MsBackendMetaboLights/README.md)
 [<img src="./MsBackendMgf/MsBackendMgf.png" height="150">](MsBackendMgf/README.md)
