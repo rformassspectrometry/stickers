@@ -21,6 +21,7 @@ This repository contains the [logo](logo/README.md) for the
 [<img src="./PSMatch/PSMatch.png" height="150">](PSMatch/README.md)
 [<img src="./PTMods/PTMods.png" height="150">](PTMods/README.md)
 [<img src="./QFeatures/QFeatures.png" height="150">](QFeatures/README.md)
+[<img src="./QFeaturesGUI/QFeaturesGUI.png" height="150">](QFeaturesGUI/README.md)
 [<img src="./Spectra/Spectra.png" height="150">](Spectra/README.md)
 [<img src="./SpectraQL/SpectraQL.png" height="150">](SpectraQL/README.md)
 [<img src="./SpectriPy/SpectriPy.png" height="150">](SpectriPy/README.md)
@@ -33,6 +34,7 @@ This repository contains the [logo](logo/README.md) for the
 [<img src="./PSMatch/PSMatch-rainbow.png" height="150">](PSMatch/README.md)
 [<img src="./PTMods/PTMods-rainbow.png" height="150">](PTMods/README.md)
 [<img src="./Chromatograms/Chromatograms-rainbow.png" height="150">](Chromatograms/README.md)
+[<img src="./QFeaturesGUI/QFeaturesGUI-rainbow.png" height="150">](QFeaturesGUI/README.md)
 
 
 # License
