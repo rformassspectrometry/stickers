@@ -19,6 +19,7 @@ This repository contains the [logo](logo/README.md) for the
 [<img src="./MsCoreUtils/MsCoreUtils.png" height="150">](MsCoreUtils/README.md)
 [<img src="./MsExperiment/MsExperiment.png" height="150">](MsExperiment/README.md)
 [<img src="./MsFeatures/MsFeatures.png" height="150">](MsFeatures/README.md)
+[<img src="./MsStash/MsStash.png" height="150">](MsStash/README.md)
 [<img src="./PSMatch/PSMatch.png" height="150">](PSMatch/README.md)
 [<img src="./PTMods/PTMods.png" height="150">](PTMods/README.md)
 [<img src="./QFeatures/QFeatures.png" height="150">](QFeatures/README.md)
