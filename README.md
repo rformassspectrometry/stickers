@@ -27,6 +27,7 @@ This repository contains the [logo](logo/README.md) for the
 [<img src="./Spectra/Spectra.png" height="150">](Spectra/README.md)
 [<img src="./SpectraQL/SpectraQL.png" height="150">](SpectraQL/README.md)
 [<img src="./SpectriPy/SpectriPy.png" height="150">](SpectriPy/README.md)
+[<img src="./SpectraStash/SpectraStash.png" height="150">](SpectraStash/README.md)
 
 
 # Diversity-affirming versions
