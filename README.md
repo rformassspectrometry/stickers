@@ -18,6 +18,7 @@ This repository contains the [logo](logo/README.md) for the
 [<img src="./MsBackendSql/MsBackendSql.png" height="150">](MsBackendSql/README.md)
 [<img src="./MsCoreUtils/MsCoreUtils.png" height="150">](MsCoreUtils/README.md)
 [<img src="./MsExperiment/MsExperiment.png" height="150">](MsExperiment/README.md)
+[<img src="./MsExperimentStash/MsExperimentStash.png" height="150">](MsExperimentStash/README.md)
 [<img src="./MsFeatures/MsFeatures.png" height="150">](MsFeatures/README.md)
 [<img src="./MsStash/MsStash.png" height="150">](MsStash/README.md)
 [<img src="./PSMatch/PSMatch.png" height="150">](PSMatch/README.md)
