@@ -59,6 +59,7 @@ col_orange = "#fcdac2"
 col_yellow = "#fffbcf"
 col_white = "#ffffff"
 font_text <- "Aller_Rg"
+col_text = "#2e3131"
 
 ## colored beams.
 hex <- ggplot() +
@@ -84,7 +85,7 @@ hex <- ggplot() +
     geom_url("www.bioconductor.org", x = 1, y = 0.09,
              color = col_grey, size = 6.5, family = font_text) + 
     geom_pkgname("MsExperiment", y = 1.4, size = 19,
-                 color = col_grey, family = font_text) + 
+                 color = col_text, family = font_text) + 
     theme_sticker()
 save_sticker(filename = "MsExperiment.png", hex)
 
