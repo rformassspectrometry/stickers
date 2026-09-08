@@ -58,6 +58,7 @@ col_purple = "#dfc2fe"
 col_orange = "#fcdac2"
 col_yellow = "#fffbcf"
 col_white = "#ffffff"
+font_text <- "Aller_Rg"
 
 ## colored beams.
 hex <- ggplot() +
@@ -78,13 +79,12 @@ hex <- ggplot() +
                  aes(x = x, y = y),
                  fill = paste0(col_purple)) +
     geom_hexagon(size = 1.2, fill = NA, color = col_grey) +
-    geom_subview(subview = img1, x = 0.97, y = 0.82,
-                 width = 1) +
-    geom_url("www.RforMassSpectrometry.org",
-             size = 4.7,
-             color = col_grey) + 
-    geom_pkgname("MsExperiment", y = 1.46, size = 16,
-                 color = col_grey, family = "Aller") + 
+    geom_subview(subview = img1, x = 0.95, y = 0.76,
+                 width = 0.9) +
+    geom_url("www.bioconductor.org", x = 1, y = 0.09,
+             color = col_grey, size = 6.5, family = font_text) + 
+    geom_pkgname("MsExperiment", y = 1.4, size = 19,
+                 color = col_grey, family = font_text) + 
     theme_sticker()
 save_sticker(filename = "MsExperiment.png", hex)
 
