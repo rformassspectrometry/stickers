@@ -104,9 +104,12 @@ hex <- ggplot() +
     geom_subview(subview = img, x = 1.00, y = 1.00,
                  width = 1.0, height = 1.0) +
     ## font size for linux: 6.5, macOS
-    geom_url("www.bioconductor.org", x = 0.98, y = 0.17,
+    ## geom_url("www.bioconductor.org", x = 0.98, y = 0.17,
+    ##          color = paste0(col_r_blue, "ff"), size = 6.5,
+    ##          family = font_text) + 
+    geom_url("www.bioconductor.org", x = 0.27, y = 0.59,
              color = paste0(col_r_blue, "ff"), size = 6.5,
-             family = font_text) + 
+             family = font_text, angle = -30) + 
     theme_sticker()
 save_sticker(filename = "RmzTabM.png", hex)
 
